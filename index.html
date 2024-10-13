@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio-chadnrashekar</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" 
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.1.2/dist/css/coreui.min.css" rel="stylesheet" integrity="sha384-lBISJVJ49zh34fnUuAaSAyuYzQ2ioGvhm4As4Z1JFde0kVpaC1FFWD3f9adpZrdD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@coreui/coreui@5.1.2/dist/js/coreui.bundle.min.js" integrity="sha384-yoEOGIfJg9mO8eOS9dgSYBXwb2hCCE+AMiJYavhAofzm8AoyVE241kjON695K1v5" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <i class="fa-solid fa-sun"></i>
+
+    <header>
+      <h2>CS</h2>
+      <ul class="menu" id="menu">
+        <li><a href="./portfolio/Portfolio.html">Portfolio</a></li>
+         
+      </ul>
+
+      <div class="social_icons">
+        <a href="" title="Download Resume"><i class="fa-solid fa-download"></i></a>
+        <a href="https://github.com/chandrashekarRravi" title="github-profile  "><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/chandra-shekar6366189346/" title="linkedin"><i class="fa-brands fa-linkedin"></i></a>
+      </div>  
+
+      <div class="bars">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+    </header>
+
+    <div class="hero">
+      <div class="hero_detail">
+        <h1>Chandra Shekar</h1>
+        <h2 id="element"> </h2>
+        <br />
+        <p>
+          A versatile tech enthusiast with a strong commitment to
+          knowledge sharing and innovation. 
+           With a passion for design and a keen eye for user experience, I
+          specialize in creating seamless interactions that leave a lasting
+          impression.
+        </p>
+
+        <a href="#"><button>See All Projects</button></a>
+      </div>
+      <div class="hero-image overlay ">
+        <img src="./profile.png" alt="pfp image" />
+      </div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      let bars = document.querySelector(".bars");
+      let menu = document.querySelector("#menu");
+
+      bars.addEventListener("click", () => {
+        menu.classList.toggle("mobile-menu");
+      });
+
+      const sun = document.querySelector(".fa-sun");
+
+      sun.addEventListener("click", () => {
+        document.body.classList.toggle("dark-mode");
+      });
+
+      var typed = new Typed("#element", {
+        strings: ["Web Designer.", "&amp; Front-End Developer."],
+        startDelay: 1000,
+        typeSpeed: 50,
+        backSpeed: 80,
+        loop: true,
+        loopCount: Infinity,
+      });
+    </script>
+  </body>
+</html>
